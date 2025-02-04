@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Money Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?business,finance') no-repeat center center/cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7); /* Light overlay for better text visibility */
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            color: #222; /* Dark text for contrast */
+            max-width: 700px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .cta-button {
+            background: gold;
+            padding: 12px 25px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background: yellow;
+        }
+
+        /* Content */
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 60px 0;
+        }
+
+        .ad-banner {
+            background: gold;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .blog-post {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .blog-post:hover {
+            transform: scale(1.03);
+        }
+
+        .blog-post h4 {
+            color: #ff416c;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            background: #333;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .newsletter input {
+            padding: 10px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .newsletter button {
+            padding: 10px 15px;
+            background: gold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background: #ff416c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #ff4b2b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Elite Money Blog</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Learn How to Make Money Online & Build Wealth!</h1>
+            <p>Discover top strategies for passive income, freelancing, and smart investments.</p>
+            <button class="cta-button">Start Learning</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- AdSense Placeholder -->
+        <div class="ad-banner">
+            🤑 Ad Space - Insert Google AdSense Code Here
+        </div>
+
+        <h2>Latest Blog Posts</h2>
+
+        <div class="blog-post">
+            <h4>🚀 10 Ways to Earn Money Online</h4>
+            <p>Discover how to make passive income from home. Check out <a href="https://example-affiliate-link.com" target="_blank"><strong>this amazing course</strong></a> to start earning!</p>
+        </div>
+
+        <div class="blog-post">
+            <h4>💻 Best Laptops for Work</h4>
+            <p>Looking for a laptop? Get the best deals <a href="https://example-affiliate-link.com" target="_blank"><strong>here</strong></a>.</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h3>📩 Join Our Money-Making Newsletter</h3>
+            <p>Get the best tips & tricks straight to your inbox!</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>📞 Contact Us</h3>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button>Send Message</button>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Elite Money Blog | Privacy Policy
+    </footer>
+
+    <script>
+        // Newsletter Subscription
+        document.querySelector(".newsletter button").addEventListener("click", function() {
+            alert("Thank you for subscribing! 🎉");
+        });
+
+        // Contact Form Submission
+        document.querySelector(".contact-form button").addEventListener("click", function() {
+            alert("Message sent successfully! ✅");
+        });
+    </script>
+
+</body>
+</html>
